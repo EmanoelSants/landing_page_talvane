@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Meus Contatos | José Talvane - Coach",
-  description: "This is Contact Page for Startup Nextjs Template",
+  description: "Aqui estão os meios que você pode estar me contatando.",
   // other metadata
 };
 
@@ -14,7 +14,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Meus Contatos"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Quer garantir sua vaga ou retirar alguma dúvida? Deixe seus dados logo a baixo, e entrarei em contato o mais breve possível."
       />
 
       <Contact />
