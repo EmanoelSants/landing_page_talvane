@@ -66,7 +66,7 @@ const Pricing = () => {
             price={isMonthly ? "R$ 9,90" : "R$ 9,90"}
             duration={isMonthly ? "" : ""}
             subtitle="Vendas com Propósito: Domine as Emoções e Aumente suas Vendas!"
-            externalLink="https://seu-site.com/e-book"
+            externalLink="https://go.hotmart.com/P97688729J"
           >
             <OfferList text="Direcionamento Preciso" status="active" />
             <OfferList text="Técnicas Testadas" status="active" />
@@ -78,7 +78,7 @@ const Pricing = () => {
             price={isMonthly ? "R$ 29,90" : "R$ 29,90"}
             duration={isMonthly ? "" : ""}
             subtitle="Domine emoções nas vendas e crie conexões genuínas com clientes!"
-            externalLink="https://seu-site.com/e-book"
+            externalLink="https://go.hotmart.com/K97151033R"
           >
             <OfferList text="Aprendizado Prático e Direto" status="active" />
             <OfferList text="Métodos Eficazes e Rápidos" status="active" />
