@@ -60,13 +60,25 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-4 gap-y-10 md:grid-cols-2 lg:grid-cols-4">
+          <PricingBox
+            packageName="E-book"
+            price={isMonthly ? "R$ 9,90" : "R$ 9,90"}
+            duration={isMonthly ? "" : ""}
+            subtitle="Vendas com Propósito: Domine as Emoções e Aumente suas Vendas!"
+            externalLink="https://seu-site.com/e-book"
+          >
+            <OfferList text="Direcionamento Preciso" status="active" />
+            <OfferList text="Técnicas Testadas" status="active" />
+            <OfferList text="Garantia de Resultados" status="active" />
+          </PricingBox>
+
           <PricingBox
             packageName="Curso"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "pessoa" : "empresa"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-            message={`Olá, Talvane!😊✨ Gostaria de saber mais sobre o _*CURSO*_ na modalidade "${isMonthly ? "Pessoal 👤" : "Empresarial 🏢"}" que está no valor de R$${isMonthly ? "40" : "120"}.`}
+            price={isMonthly ? "R$ 29,90" : "R$ 29,90"}
+            duration={isMonthly ? "" : ""}
+            subtitle="Domine emoções nas vendas e crie conexões genuínas com clientes!"
+            externalLink="https://seu-site.com/e-book"
           >
             <OfferList text="Aprendizado Prático e Direto" status="active" />
             <OfferList text="Métodos Eficazes e Rápidos" status="active" />
@@ -75,10 +87,10 @@ const Pricing = () => {
 
           <PricingBox
             packageName="Treinamento"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "pessoa" : "empresa"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-            message={`Olá, Talvane!😊✨ Gostaria de mais informações sobre o _*TREINAMENTO*_ na modalidade "${isMonthly ? "Pessoal 👤" : "Empresarial 🏢"}"que está no valor de R$${isMonthly ? "399" : "789"}.`}
+            price={isMonthly ? "Consultar" : "Consultar"}
+            duration={isMonthly ? "" : ""}
+            subtitle="Tenha um direcionamento preciso para alavancar sua carreira!"
+            message={`Olá, Talvane!😊✨ Gostaria de mais informações sobre o _*TREINAMENTO*_ do tipo ${isMonthly ? "*INDIVIDUAL 👤*" : "*COLETIVO 🏢*"}.`}
           >
             <OfferList text="Aumento de Faturamento" status="active" />
             <OfferList text="Desenvolvimento Contínuo" status="active" />
@@ -87,14 +99,14 @@ const Pricing = () => {
 
           <PricingBox
             packageName="Mentoria"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "pessoa" : "empresa"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
-            message={`Olá, Talvane!😊✨ Gostaria de saber mais sobre a dinâmica da _*MENTORIA*_ na modalidade "${isMonthly ? "Pessoal 👤" : "Empresarial 🏢"}"que está no valor de R$${isMonthly ? "589" : "999"}.`}
+            price={isMonthly ? "Consultar" : "Consultar"}
+            duration={isMonthly ? "" : ""}
+            subtitle="Tenha um acompanhamento dedicado e personalizado para você!"
+            message={`Olá, Talvane!😊✨ Gostaria de saber mais sobre a dinâmica da _*MENTORIA*_ do tipo ${isMonthly ? "*INDIVIDUAL 👤*" : "*COLETIVO 🏢*"}.`}
           >
-            <OfferList text="Acompanhamento Personalizado" status="active" />
-            <OfferList text="Planejamento Estratégico Focado" status="active" />
-            <OfferList text="Superação de Desafios Rápidos" status="active" />
+            <OfferList text="Plano Personalizado" status="active" />
+            <OfferList text="Planejamento Estratégico" status="active" />
+            <OfferList text="Superação de Desafios" status="active" />
           </PricingBox>
         </div>
       </div>

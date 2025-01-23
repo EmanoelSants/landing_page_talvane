@@ -4,7 +4,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Meus Contatos | José Talvane - Coach",
+  title: "Contato | José Talvane - Coach",
   description: "Aqui estão os meios que você pode estar me contatando.",
   // other metadata
 };

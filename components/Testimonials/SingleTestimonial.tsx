@@ -14,20 +14,29 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
     ratingIcons.push(
       <span key={index} className="text-yellow">
         {starIcon}
-      </span>,
+      </span>
     );
   }
 
   return (
     <div className="w-full">
       <div
-        className="wow fadeInUp shadow-two dark:shadow-three dark:hover:shadow-gray-dark rounded-sm bg-white p-8 duration-300 hover:shadow-one dark:bg-dark lg:px-5 xl:px-8"
+        className="wow fadeInUp shadow-two dark:shadow-three dark:hover:shadow-gray-dark rounded-lg bg-white p-8 duration-300 hover:shadow-one dark:bg-dark lg:px-5 xl:px-8"
         data-wow-delay=".1s"
       >
+        <div className="w-64 h-64 mt-4 ml-4 absolute opacity-20">
+          <img
+            className="w-full h-auto object-cover"
+            src="/images/logo/favicon.svg"
+            alt="Ícone Talvane José"
+          />
+        </div>
+
         <div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
         <p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
           “{content}“
         </p>
+
         <div className="flex items-center">
           <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
             <Image src={image} alt={name} fill />

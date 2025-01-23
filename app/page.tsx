@@ -8,7 +8,7 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Talvane José - Coach",
+  title: "Talvane José",
   description: "Transforme seu salão de beleza em uma máquina de lucro!",
 };
 
